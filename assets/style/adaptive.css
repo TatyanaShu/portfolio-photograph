@@ -1,0 +1,381 @@
+@media screen and (max-width: 1420px) {
+  .price-container {
+    max-width: 75%;
+  }
+  .price-card {
+    margin-bottom: 50px;
+  }
+  header {
+    margin: 0 20px;
+
+  }
+}
+@media screen and (max-width: 1410px) {
+  .portfolio-photo {
+    max-width: 75%;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .skills-list {
+    max-width: 60%;
+  }
+  .skills-list__container {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #menu__toggle {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center; /* центрируем содержимое кнопки */
+    /* top: 20px; */
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 20px;
+    position: relative;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #ffffff;
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -11px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 11px;
+  }
+  .main-navigatin__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    margin: 0 0 auto auto;
+    left: 500px;
+    /* right: -100px; */
+    /* left: 548px; */
+    width: 620px;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+  }
+  .main-navigatin__list:hover,
+  .main-navigatin__list:active {
+    display: block;
+  }
+  .main-navigation__item {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 73px;
+  }
+  .main-navigation__item a {
+    font-family: Inter;
+  }
+  .main-navigation__item:hover {
+    background-color: #cfd8dc;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .main-navigatin__list {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .main-navigatin__list {
+    transition-duration: 0.25s;
+  }
+  .mmain-navigation__item {
+    transition-duration: 0.25s;
+  }
+  header,
+/* section, */
+main,
+footer {
+    max-width: 100%;
+    margin: 0 40px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 100px;
+    margin-bottom: 20px;
+  }
+  .hero-photo p {
+    width: 420px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
+  .hero-photo p,
+  h4 {
+    line-height: 36px;
+  }
+  .main-navigation {
+    order: 3;
+  }
+  .language {
+    order: 2;
+  }
+  .container {
+    background-position: inherit;
+    background-size: 125%;
+  }
+  #hero {
+    margin-bottom: 100px;
+  }
+  .skills-list__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 920px) {
+  .portfolio-photo img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio-photo {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 769px) {
+  h1 {
+    font-size: 32px;
+    line-height: 64px;
+    margin-bottom: 20px;
+  }
+  .hero-photo p {
+    width: 390px;
+    letter-spacing: 0.5px;
+    margin-bottom: 60px;
+  }
+  .hero-photo p,
+  h4 {
+    line-height: 24px;
+  }
+  header,
+  #skills,
+  #portfolio,
+  footer {
+    margin: 0 60px;
+  }
+  .video, .price {
+    max-width: 100%;
+  }
+  #hero {
+    margin: 75px auto 152px 60px;
+    max-width: 390px;
+  }
+  .hero-photo {
+    height: 270px;
+  }
+  .container {
+    background-position: inherit;
+    background-size: 125%;
+  }
+  h2, .name-part, .contacts-container h2 {
+    font-weight: bold;
+font-size: 32px;
+line-height: 40px;
+text-align: center;
+  }
+  .contacts-container h2{
+    font-size: 32px;
+line-height: 64px;
+  }
+  .skills-list {
+    max-width: 100%;
+    align-items: center;
+  }
+  .name-part {
+    margin: 100px auto 66px auto;
+  }
+  .skills-list__container {
+    max-width: 300px;
+  }
+  h4 {
+    margin: 30px auto 20px auto;
+  }
+  .skills-list__container p {
+    font-size: 18px;
+line-height: 22px;
+margin: 10px auto 40px auto;
+max-width: 90%;
+}
+.portfolio-buttons {
+  max-width: 69%;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.search-category {
+  margin-bottom: 10px;
+}
+.portfolio-photo {
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.video-container {
+  height: 420px;
+
+}
+.video  {
+  width: 100%;
+}
+.video-container svg {
+  width: 65px;
+  height: 65px;
+}
+.price-card {
+  max-width: 420px;
+  height: 505px;
+  margin-right: 0;
+}
+.price-container {
+  align-items: center;
+  justify-content: center;
+}
+main {
+  margin: 0;
+}
+#price {
+  margin-bottom: 0px;
+}
+.contacts-container {
+  margin: 0 auto 110px auto;
+}
+#contacts {
+  margin-top: 30px;
+}
+form {
+  text-align: center;
+  margin-top:10px
+}
+input, textarea {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+input[type="email"],
+input[type="tel"] , textarea {
+  width: 430px;
+}
+input[type="email"],
+input[type="tel"] {
+  height: 44px;
+}
+#contacts {
+  height: 600px;
+}
+.footer-container {
+  flex-direction: column;
+  margin: 15px auto;
+  max-width: 50%;
+  text-align: center;
+  line-height: 24px;
+}
+.footer-container ul {
+  margin: auto;
+}
+}
+@media screen and (max-width: 769px) {
+  .skills-list__container, .search-category {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 609px) {
+  #hero {
+    margin: 60px auto 50px 60px;
+    max-width: 390px;
+}
+.contacts-container {
+  width: 350px;
+}
+input[type="email"], input[type="tel"], textarea {
+  width: 330px;
+}
+}
+
+@media screen and (max-width: 501px) {
+.hero-photo {
+  max-width: 250px;
+}
+.hero-photo p {
+  width: 250px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+h1 {
+  margin: auto;
+}
+#hero {
+  margin: 20px auto 20px 60px;
+}
+.name-part {
+margin: 30px auto;
+}
+.portfolio-photo img {
+  width: 250px;
+  height: 350px
+}
+.price-card__container {
+  max-width: 250px;
+}
+input[type="email"], input[type="tel"], textarea {
+  width: 200px;
+}
+.footer-container {
+  max-width: 100%;
+  margin: auto;
+}
+.contacts-container {
+  width: 250px;
+}
+}
+@media screen and (max-width: 1250px) {
+  .portfolio-photo img {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .portfolio-photo, .price-card {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /* max-width: 50%; */
+  }
+}
